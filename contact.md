@@ -14,7 +14,7 @@ For project inquiries, coaching, or consulting, use the form below or email dire
 
 > Note: Replace `YOUR_FORMSPREE_ID` with your actual Formspree form ID.
 
-<form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+<form action="https://formspree.io/f/mkgldqev" method="POST">
   <label for="name">Name</label><br>
   <input type="text" id="name" name="name" required><br><br>
 
