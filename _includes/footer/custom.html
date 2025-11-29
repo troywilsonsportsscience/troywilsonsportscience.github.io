@@ -1,0 +1,18 @@
+<button id="theme-toggle" style="position:fixed;bottom:1rem;right:1rem;z-index:999;">
+  Toggle theme
+</button>
+
+<script>
+  (function() {
+    const body = document.body;
+    const key = "tw-theme";
+    const saved = localStorage.getItem(key);
+
+    if (saved === "dark") body.classList.add("dark-mode");
+
+    document.getElementById("theme-toggle").addEventListener("click", function() {
+      body.classList.toggle("dark-mode");
+      localStorage.setItem(key, body.classList.contains("dark-mode") ? "dark" : "light");
+    });
+  })();
+</script>
