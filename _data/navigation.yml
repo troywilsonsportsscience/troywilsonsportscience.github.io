@@ -6,11 +6,11 @@ main:
   - title: "Services"
     url: "/services/"
   - title: "Projects Overview"
-    children:
-      - title: "Projects"
-        url: "/projects/"
-      - title: "Case Studies"
-        url: "/case-studies/"
+      children:
+        - title: "Projects"
+          url: "/projects/"
+        - title: "Case Studies"
+          url: "/case-studies/"
   - title: "Blog"
     url: "/blog/"
   - title: "Resources"
