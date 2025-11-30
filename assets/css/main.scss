@@ -33,11 +33,19 @@ body.dark-mode a {
   margin-bottom: 0.75rem;
 }
 
+.project-list li,
+.post-list li {
+  padding-left: 0.2rem !important;
+}
+
 .page__content h2 {
   margin-top: 3.5rem !important;
   margin-bottom: 1.4rem !important;
 }
 
+.page__content h2#ready-to-talk {
+  margin-top: 4rem !important;
+}
 .project-list li,
 .post-list li {
   margin-bottom: 1.6rem !important;
@@ -45,10 +53,10 @@ body.dark-mode a {
 }
 
 .page__content .feature__item {
-  background: #0f172a !important;
+  background: #1e293b !important;
   border-radius: 10px !important;
   padding: 1.4rem !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.45) !important;
 }
 
 .page__content .feature__item h3 {
