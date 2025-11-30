@@ -5,8 +5,7 @@ main:
     url: "/about/"
   - title: "Services"
     url: "/services/"
-  - title: "Projects"
-    url: "/projects/"
+  - title: "Projects Overview"
     children:
       - title: "Projects"
         url: "/projects/"
