@@ -4,7 +4,7 @@ title: "Applied sport science, strength & conditioning, and data analytics."
 permalink: /
 header:
   overlay_color: "#0b1120"
-  overlay_filter: "0.75"
+  overlay_filter: "0.5"
   overlay_image: "/assets/img/hero-banner.jpg"
   actions:
     - label: "View Services"
