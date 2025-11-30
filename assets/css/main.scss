@@ -1,74 +1,114 @@
 ---
 ---
+/* Required front-matter so Jekyll compiles this SCSS */
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin }}";
+/* Loads the color theme (default skin). */
+
 @import "minimal-mistakes";
+/* Loads the full Minimal Mistakes base CSS.  
+   Everything you override must come AFTER this. */
 
+
+/* ======================= */
+/* COLOR VARIABLES (unused) */
+/* ======================= */
 :root {
-  --tw-primary: #0f172a;
-  --tw-accent: #1d4ed8;
+  --tw-primary: #0f172a;   /* Custom color variable – not used anywhere yet. */
+  --tw-accent: #1d4ed8;    /* Custom accent variable – also unused. */
 }
 
+
+/* ======================= */
+/* GLOBAL LINK STYLE        */
+/* ======================= */
 a {
-  text-decoration: none;
+  text-decoration: none;   /* Removes underlines on all links site-wide. */
 }
 
+
+/* ======================= */
+/* DARK MODE BASE COLORS    */
+/* ======================= */
 body.dark-mode {
-  background-color: #020617;
-  color: #e5e7eb;
+  background-color: #020617;   /* Forces very dark background when dark mode is active. */
+  color: #e5e7eb;              /* Light gray text by default. */
 }
 
 body.dark-mode a {
-  color: #60a5fa;
+  color: #60a5fa;              /* Light-blue link color in dark mode. */
 }
 
+
+/* ======================= */
+/* BLOG + PROJECT LISTS     */
+/* ======================= */
 .project-list,
 .post-list {
-  list-style: none;
-  padding-left: 0;
+  list-style: none;            /* Removes bullets. */
+  padding-left: 0;             /* Removes default indentation. */
 }
 
 .project-list li,
 .post-list li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;      /* Basic spacing between list items. */
 }
 
 .project-list li,
 .post-list li {
-  padding-left: 0.2rem !important;
+  padding-left: 0.2rem !important; 
+  /* Slight indentation for readability.  
+     (This duplicates the selector above—harmless but redundant.) */
 }
 
+
+/* ======================= */
+/* SECTION HEADINGS SPACING */
+/* ======================= */
 .page__content h2 {
-  margin-top: 3.5rem !important;
-  margin-bottom: 1.4rem !important;
+  margin-top: 3.5rem !important;   /* Extra top space before each H2 section. */
+  margin-bottom: 1.4rem !important;/* Space under section headers. */
 }
 
 .page__content h2#ready-to-talk {
-  margin-top: 4rem !important;
-}
-.project-list li,
-.post-list li {
-  margin-bottom: 1.6rem !important;
-  line-height: 1.5 !important;
+  margin-top: 4rem !important;     /* Even more spacing above the last CTA section. */
 }
 
+
+/* ======================= */
+/* LIST SPACING / READABILITY */
+/* ======================= */
+.project-list li,
+.post-list li {
+  margin-bottom: 1.6rem !important; /* Larger spacing between items. */
+  line-height: 1.5 !important;       /* More readable lines. */
+}
+
+
+/* ======================= */
+/* FEATURE BLOCK (HOMEPAGE CARDS) */
+/* ======================= */
 .page__content .feature__item {
-  background: #1e293b !important;
-  border-radius: 10px !important;
-  padding: 1.4rem !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.45) !important;
+  background: #1e293b !important;   /* Dark slate background for cards. */
+  border-radius: 10px !important;   /* Rounded corners. */
+  padding: 1.4rem !important;       /* Internal spacing. */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.45) !important; /* Slight shadow for “card” effect. */
 }
 
 .page__content .feature__item h3 {
-  margin-top: 0 !important;
+  margin-top: 0 !important;         /* Removes extra top-gap on card titles. */
 }
 
 .page__content .feature__item p {
-  margin-bottom: 0.9rem !important;
+  margin-bottom: 0.9rem !important; /* Tighter spacing under card text. */
 }
 
+
+/* ======================= */
+/* GLOBAL CONTENT WIDTH     */
+/* ======================= */
 .page__content {
-  max-width: 780px !important;
+  max-width: 780px !important;      /* Narrows the content area for better readability. */
   margin-left: auto !important;
-  margin-right: auto !important;
+  margin-right: auto !important;    /* Centers content block. */
 }
