@@ -104,15 +104,15 @@ body.dark-mode a {
 }
 
 /* FEATURE CARD TEXT COLOR (SPLASH LAYOUT) */
-.feature__row,
-.feature__row h3,
-.feature__row p,
-.feature__row a {
+.feature__item,
+.feature__item h3,
+.feature__item p,
+.feature__item a {
   color: #f8fafc !important;     /* near white */
 }
 
 /* Ensure links inside cards are readable */
-.feature__row a:hover {
+.feature__item a:hover {
   color: #ffffff !important;
 }
 
